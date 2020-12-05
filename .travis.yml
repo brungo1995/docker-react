@@ -7,4 +7,6 @@ before_install:
 
 # commands that need to be executed to run our test suite
 script: 
-  - docker run brungo1995/docker_react npm run test -- --coverage
+  # Run tests and exit terminal otherwhise hangs there waiting for input
+  - docker run -e CI=true brungo1995/docker_react npm run test
+  # - docker run brungo1995/docker_react npm run test -- --coverage
