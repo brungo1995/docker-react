@@ -1,1 +1,10 @@
-language: node_js
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t brungo1995/docker_react -f Dockerfile.dev .
+
+# commands that need to be executed to run our test suite
+script: 
+  - docker run brungo1995/docker_react npm run test -- --coverage
