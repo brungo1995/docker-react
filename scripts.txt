@@ -1,0 +1,1 @@
+docker run - p 3030: 3000 --rm - it brungo1995 / docker - react

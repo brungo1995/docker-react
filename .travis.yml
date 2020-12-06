@@ -28,6 +28,7 @@ script:
 # After all is successfull run this script to push to docker hub
 after_success:
   - sh .travis/deploy_dockerhub.sh
+  – test “$TRAVIS_BRANCH” = “master” && sh .travis/deploy_heroku.sh
 
   # If you have an HEruku account then you can deploy like this 
 # deploy:
