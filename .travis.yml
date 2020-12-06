@@ -28,13 +28,4 @@ script:
 # After all is successfull run this script to push to docker hub
 after_success:
   - sh .travis/deploy_dockerhub.sh
-  – test “$TRAVIS_BRANCH” = “master” && sh .travis/deploy_heroku.sh
-
-  # If you have an HEruku account then you can deploy like this 
-# deploy:
-#   provider: heroku
-#   api_key:
-#     secure: <ENCRYPTED KEY HERE>
-#   app: <your-heroku-app-name-here>
-#   on:
-#     repo: <your-github-user-name>/<your-github-repo-here>
+  – test "$TRAVIS_BRANCH" = "master" && sh .travis/deploy_heroku.sh
