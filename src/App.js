@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hi Impact.com or luno.com
+          Docker with Heruku or AWS and Travis CI
         </p>
         <a
           className="App-link"
