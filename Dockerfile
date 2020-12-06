@@ -7,5 +7,6 @@ COPY . .
 RUN npm run build
 
 FROM nginx:13.12.0-alpine
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
 # The default nginx comman will start the container
