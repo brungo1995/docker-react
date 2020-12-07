@@ -23,7 +23,7 @@ deploy:
   # Only trigger the build process when deployed to the master branch
     branch: master
   access_key_id: "$AWS_ACCESS_KEY"
-  secret_access_key: 
+  secret_access_key: &3
     secure: "$AWS_SECRET_KEY"
 
 # After all is successfull run this script to push to docker hub
