@@ -16,7 +16,7 @@ deploy:
   # choos the region where deployed your elastic beanstal region
   region: af-south-1
   app: "docker-react"
-  env: "DockerReact-env"
+  env: "DockerReact-env-1"
   bucket_name: "elasticbeanstalk-af-south-1-046272106737"
   bucket_path: "docker-react"
   on:
