@@ -17,7 +17,7 @@ deploy:
   region: af-south-1
   app: "docker-react"
   env: "DockerReact-env"
-  bucket_name: "elasticbeanstalk-af-south-1-046272106737"
+  bucket_name: "arn:aws:s3:::elasticbeanstalk-af-south-1-046272106737"
   bucket_path: "docker-react"
   on:
   # Only trigger the build process when deployed to the master branch
